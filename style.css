@@ -1,0 +1,277 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+nav, .nav-links{
+  display: flex;
+}
+
+nav{
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links{
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover{
+  color: gray;
+  text-decoration: underline;
+  text-underline-offset: 0.6rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo{
+  font-size: 2rem;
+}
+
+.logo:hover{
+  cursor: default;
+}
+
+section{
+  box-sizing: border-box;
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  min-height: fit-content;
+}
+
+.my_profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-pic{
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  margin: auto 0;
+}
+
+.title{
+  font-size: 3rem;
+}
+
+.intro, .about-info{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.job-title{
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+.intro p{
+  font-weight: 600;
+}
+.intro{
+  flex-direction: column;
+  align-self: center;
+  margin: 1rem;
+}
+
+
+.icons{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.icons img{
+  width: 30px;
+}
+
+.icons img:hover{
+  opacity: 70%;
+}
+
+.section-pic img{
+  width: 300px;
+}
+
+
+/* Style the about me section*/
+.text{
+  text-align: center;
+}
+.about-container{
+  display: flex;
+  gap: 2.5em;
+  margin-top: 2em;
+}
+
+.about-profile-pic{
+
+  width: 400px;
+  height: auto;
+  border-radius: 10%;
+}
+
+.about-container-text{
+  justify-self: center;
+  align-self: center;
+}
+
+.education-icon{
+  width: 50px;
+}
+
+.about-education{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 1px grey solid;
+  border-radius: 2em;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.marker{
+  width: 30px;
+  height: 30px;
+  margin: .5em 1em;
+}
+
+/* Styling the skills */
+
+.tech-stack{
+  display: flex;
+  justify-content: center;
+  gap: 2.5em;
+  padding-top: 2em;
+
+}
+
+.skill-div{
+  border: 1px grey solid;
+  border-radius: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em 0em;
+}
+
+.skill-title{
+  text-align: center;
+  color: grey;
+}
+.skills{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  padding: 1em;
+}
+
+.skill{
+  display: flex;
+  align-items: flex-end;
+  gap: .5em;
+}
+
+.projects-div{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  margin: 1.5em 0em;
+}
+
+.project-pic{
+  width: 350px;
+  height: 350px;
+  border-radius: 3em;
+}
+
+.project{
+  border: 1px grey solid;
+  border-radius: 2em;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1em 0em;
+  background: rgb(250, 250, 250);
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.buttons{
+  background: transparent;
+  border: 1px rgb(53, 53, 53) solid;
+  border-radius: 2em  ;
+  padding: .8em;
+  cursor: pointer;
+}
+
+.btn:hover{
+  color: white;
+  background-color: rgb(53, 53, 53);
+}
+
+.btn-contact{
+  color: white;
+  background-color: rgb(53, 53, 53);
+}
+
+.btn-contact:hover{
+  background-color: white;
+  color: rgb(53, 53, 53);
+}
+
+.contacts-div{
+  border: 1px grey solid;;
+  border-radius: 2em;
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+  padding: 2em 2em;
+  gap: 2em;
+}
+
+.icon{
+  width: 30px;
+  height: 30px;
+}
+
+.my{
+  display: flex;
+  gap: 3em;
+  border: 1px red solid;
+}

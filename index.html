@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Desktop.css">
+  <link rel="stylesheet" href="mobile-style.css">
+  <title>Portfolio</title> 
+</head>
+<body>
+  <nav id="navigation">
+    <div class="logo">Thabane Ngobe</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Tech Stack</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contacts">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="mobile-menu" class="mobile">
+    <div class="logo">Thabane Ngobe</div>
+    <div class="bars">
+      <div class="menu-icon" onclick="togleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="mobile-links">
+        <li><a href="#about" onclick="togleMenu()">About</a></li>
+        <li><a href="#projects" onclick="togleMenu()" >Projects</a></li>
+        <li><a href="#contact" onclick="togleMenu()" >Contact</a></li>
+      </div>   
+    </div>
+
+  </nav>
+
+  <main>
+    <section id="profile" class="container">
+      
+      <div>
+        <img src="./assets/profile.jpeg" alt="Thabane Ngobe Profile" class="pic profile-pic">
+      </div>
+
+      <div class="intro">
+        <p class="text">Hello, I'm </p>
+        <h1 class="text title">Thabane Ngobe</h1>
+        <p class="text heading">Full Stack Developer</p>
+
+        <div class="info">
+          <button class="btn"  onclick="window.open('./assets/MyCv.pdf')">Download CV</button>
+
+          <button class="btn btn-contact" onclick="location.href= '#contact'">Contact Info</button>
+        </div>
+
+        <div class="info">
+          <a href="https://www.linkedin.com/in/thabane-ngobe-thabanengobe/" target="_blank">
+            <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon">
+          </a>
+          <a href="https://github.com/Thabanengobe" target="_blank">
+            <img src="./assets/github.png" alt="Github profile" class="icon">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+        <p class="text">Get To Know More</p>
+        <h2 class="text title-2">About Me</h2>
+        <div class="container">
+          <div>
+            <img 
+              src="./assets/programming-concept-illustration.png" 
+              class="pic"
+              alt="Profile-pic "
+              >
+          </div>
+          <div class="about-div">
+            <div class="education-div">
+              <div class="education-icon">
+                <img 
+                  src="./assets/education.png" 
+                  class="icon"
+                  alt="Education icon"
+                  >
+              </div>
+              <h3>Education</h3>
+              <p>National certifcate Matric</p>
+              <p>IT Sytems Development NQF 5</p>
+            </div>
+            <p >
+              An aspiring full-stack developer, I am currently focused on mastering front-end development while learning Spring Boot and Thymeleaf for back-end integration. Through this platform, I am enhancing my skills in HTML, CSS, and JavaScript to create responsive, user-friendly interfaces, and simultaneously delving into Spring Boot to build robust, server-side applications.
+
+With a passion for both design and functionality, I strive to create seamless web experiences that connect front-end and back-end technologies. My goal is to become a versatile developer, capable of tackling full-stack projects and delivering innovative web solutions. I am committed to continuous learning and growth as I work towards my aspiration of becoming a well-rounded full-stack developer.
+            </p>
+          </div>
+        </div>
+    </section>
+
+
+    <section id="skills">
+      <p class="text">Explore My</p>
+      <h2 class="text title-2">Tech Stack</h2>
+      <div class="tech-stack">
+        <div class="skills-div">
+          <h3 class="text heading">Frontend Development</h3>
+          <div class="skills frontend">
+          </div>
+        </div>
+
+        <div class="skills-div">
+          <h3 class="text heading">Backend Development</h3>
+          <div class="skills backend">
+
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <section id="projects">
+      <p class="text"> Browse Recent</p>
+      <h2 class="text title-2">Projects</h2>
+      <div class="my-projects">
+        <div class="text project">
+          <div>
+            <img src="./assets/9906021.jpg" alt="Frontend Mentor" class="pic">
+          </div>
+          <h3 >Frontend Mentor Portfolio</h3>
+          <div>
+            <button 
+            onclick="location.href = 'https://www.frontendmentor.io/profile/Thabanengobe/solutions'" 
+            class="buttons btn">View Projects
+          </button>
+          </div>
+        </div>
+
+        <div class="text project">
+          <div>
+            <img src="./assets/Screenshot 2024-09-05 at 07-51-29 Sort Visualizer.png" alt="Sort Visualizer" class="pic">
+          </div>
+          <h3 >Sort Visualizer</h3>
+          <div >
+            <button
+              onclick="location.href = 'https://github.com/Thabanengobe/Sort-Algorihtm-Visualizer'"
+              class="btn"
+            >Github</button>
+            <button 
+            onclick="location.href =''"
+            class="btn">Live Demo</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" >
+      <p class="text">Get In Touch</p>
+      <h2 class="text title-2">Contacts</h2>
+      <div>
+        <div class="container contact-div">
+          <div class="contact">
+            <img src="./assets/email.png" alt="email-icon" class="icon">
+            <a href="">Email</a>
+          </div>
+          <div class="contact">
+            <img src="./assets/linkedin.png" alt="linkedin-icon" class="icon">
+            <a href="">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  </main>
+  <footer>
+    <p class="text">
+      Copyright &#169; 2024 Thabane Ngobe. All Rights Reserved
+    </p>
+  </footer>
+</body>
+<script src="./app.js"></script>
+</html>
