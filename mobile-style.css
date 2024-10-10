@@ -81,11 +81,16 @@
 
 
 @media screen and (max-width: 900px) {
+  .logo{
+    font-size: 1.4em;
+  }
   #navigation{
     display: none;
   }
   #mobile-menu{
     display: flex;
+    position: sticky;
+    top: 1px;
 
   }
   .container{
@@ -129,5 +134,19 @@
 
   .heading{
     font-size: 1.4em;
+  }
+
+  .contacts-container{
+    flex-direction: column;
+    padding: 2em 1em;
+    border-radius: 1em;
+    margin: 1em;
+  }
+  footer{
+    display: none;
+    margin: 0em;
+  }
+  .skill{
+    transform: translateX(25%);
   }
 }

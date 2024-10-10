@@ -9,11 +9,11 @@
 </head>
 <body>
   <nav id="navigation">
-    <div class="logo">Thabane Ngobe</div>
+    <div class="logo">Thabane.dev</div>
     <div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Tech Stack</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contacts">Contact</a></li>
       </ul>
@@ -21,7 +21,7 @@
   </nav>
 
   <nav id="mobile-menu" class="mobile">
-    <div class="logo">Thabane Ngobe</div>
+    <div class="logo">Thabane.dev</div>
     <div class="bars">
       <div class="menu-icon" onclick="togleMenu()">
         <span></span>
@@ -31,8 +31,9 @@
 
       <div class="mobile-links">
         <li><a href="#about" onclick="togleMenu()">About</a></li>
+        <li><a href="#skills" onclick="togleMenu()">Skills</a></li>
         <li><a href="#projects" onclick="togleMenu()" >Projects</a></li>
-        <li><a href="#contact" onclick="togleMenu()" >Contact</a></li>
+        <li><a href="#contacts" onclick="togleMenu()" >Contact</a></li>
       </div>   
     </div>
 
@@ -46,14 +47,14 @@
       </div>
 
       <div class="intro">
-        <p class="text">Hello, I'm </p>
+        <p class="text hello">Hello, I'm </p>
         <h1 class="text title">Thabane Ngobe</h1>
         <p class="text heading">Full Stack Developer</p>
 
         <div class="info">
-          <button class="btn"  onclick="window.open('./assets/MyCv.pdf')">Download CV</button>
+          <button class="btn"  onclick="window.open('./assets/TE NGobe Cv.pdf')">Download Cv</button>
 
-          <button class="btn btn-contact" onclick="location.href= '#contact'">Contact Info</button>
+          <button class="btn btn-contact" onclick="location.href= '#contacts'">Contact info</button>
         </div>
 
         <div class="info">
@@ -71,6 +72,7 @@
         <p class="text">Get To Know More</p>
         <h2 class="text title-2">About Me</h2>
         <div class="container">
+          
           <div>
             <img 
               src="./assets/programming-concept-illustration.png" 
@@ -88,13 +90,13 @@
                   >
               </div>
               <h3>Education</h3>
-              <p>National certifcate Matric</p>
+              <p>WeThinkCode_</p>
               <p>IT Sytems Development NQF 5</p>
             </div>
-            <p >
-              An aspiring full-stack developer, I am currently focused on mastering front-end development while learning Spring Boot and Thymeleaf for back-end integration. Through this platform, I am enhancing my skills in HTML, CSS, and JavaScript to create responsive, user-friendly interfaces, and simultaneously delving into Spring Boot to build robust, server-side applications.
-
-With a passion for both design and functionality, I strive to create seamless web experiences that connect front-end and back-end technologies. My goal is to become a versatile developer, capable of tackling full-stack projects and delivering innovative web solutions. I am committed to continuous learning and growth as I work towards my aspiration of becoming a well-rounded full-stack developer.
+            <p class="about-me">
+            I am a recent graduate in IT(Systems Development) From <a href="">WeThinkCode_</a> While I haven't yet had the opportunity for formal internships, my collaborative
+projects have enhanced my teamwork and communication abilities, enabling me to work effectively
+in group settings. I’m eager to bring my technical knowledge, along with my strong problemsolving and interpersonal skills, to a dynamic team where I can contribute and grow.
             </p>
           </div>
         </div>
@@ -103,7 +105,7 @@ With a passion for both design and functionality, I strive to create seamless we
 
     <section id="skills">
       <p class="text">Explore My</p>
-      <h2 class="text title-2">Tech Stack</h2>
+      <h2 class="text title-2">Technical Skills</h2>
       <div class="tech-stack">
         <div class="skills-div">
           <h3 class="text heading">Frontend Development</h3>
@@ -126,13 +128,13 @@ With a passion for both design and functionality, I strive to create seamless we
       <div class="my-projects">
         <div class="text project">
           <div>
-            <img src="./assets/9906021.jpg" alt="Frontend Mentor" class="pic">
+            <img src="./assets/ecomerce.png" alt="Frontend Mentor" class="pic">
           </div>
-          <h3 >Frontend Mentor Portfolio</h3>
+          <h3 >Ecomerce Website</h3>
           <div>
             <button 
             onclick="location.href = 'https://www.frontendmentor.io/profile/Thabanengobe/solutions'" 
-            class="buttons btn">View Projects
+            class="buttons btn">Live Demo
           </button>
           </div>
         </div>
@@ -142,7 +144,7 @@ With a passion for both design and functionality, I strive to create seamless we
             <img src="./assets/Screenshot 2024-09-05 at 07-51-29 Sort Visualizer.png" alt="Sort Visualizer" class="pic">
           </div>
           <h3 >Sort Visualizer</h3>
-          <div >
+          <div class="btn-projects">
             <button
               onclick="location.href = 'https://github.com/Thabanengobe/Sort-Algorihtm-Visualizer'"
               class="btn"
@@ -155,28 +157,28 @@ With a passion for both design and functionality, I strive to create seamless we
       </div>
     </section>
 
-    <section id="contacts" >
-      <p class="text">Get In Touch</p>
+    <section id="contacts">
       <h2 class="text title-2">Contacts</h2>
-      <div>
-        <div class="container contact-div">
-          <div class="contact">
-            <img src="./assets/email.png" alt="email-icon" class="icon">
-            <a href="">Email</a>
+      <div class="contacts-container">
+          <div class="contacts-content">
+            <img src="./assets/email.png" alt="email address" class="icon">
+            <p><a href="mail:nlakaniphongobe@gmail.com">nhlakaniphongobe@gmail.com</a></p>
           </div>
-          <div class="contact">
-            <img src="./assets/linkedin.png" alt="linkedin-icon" class="icon">
-            <a href="">LinkedIn</a>
+          <div class="contacts-content">
+            <img src="./assets/linkedin.png" alt="linkedin profile" class="icon">
+            <p><a href="">LinkedIn Profile</a></p>
           </div>
-        </div>
       </div>
     </section>
   
   </main>
   <footer>
-    <p class="text">
-      Copyright &#169; 2024 Thabane Ngobe. All Rights Reserved
-    </p>
+    <ul class="nav-links footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contacts">Contact</a></li>
+      </ul>
   </footer>
 </body>
 <script src="./script.js"></script>

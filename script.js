@@ -66,7 +66,6 @@ function addSkill(skill){
   const skill_level = document.createElement('p');
   skill.classList = 'skill';
   skill_name.innerText = skill[0];
-  skill_level.innerText = skill[1];
   skills.appendChild(skill_name);
   skills.appendChild(skill_level);
 
